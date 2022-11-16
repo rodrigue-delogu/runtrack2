@@ -5,8 +5,8 @@
     $i=  0;
 
     while (isset($str[$i])){
-        foreach ($voyelles as $voyelle){
-        if ($str[$i] == $voyelle){
+        foreach ($voyelles as $vhuayiel){
+        if ($str[$i] == $vhuayiel){
        
             echo $str[$i];
         }
