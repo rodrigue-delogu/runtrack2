@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get" class="formCol">
+<form action="" method="get" class="formCol">
         <label for="nom">Quel est votre nom: <br></label>
         <input type="text" name="nom" id="nom"><br>
 
@@ -19,14 +19,27 @@
 
         <input type="submit" value="Envoyer le formulaire">
     </form>
-        
-<?php
-    $compter = 0;
-    foreach($_GET as $key => $value){
-    $compter++;
-    }
-    echo "<br>il y a $compter arguments";
 
+
+    <table>
+        <tr>
+        <th>Argument </th>
+        <th>Valeur </th>
+        </tr>
+
+<?php
+    foreach($_GET as $key => $value){
+    echo "
+    <tr>
+    <td>$key</td>
+    <td>$value</td>
+    </tr>
+    ";
+}
 ?>
+    </table>
+
+
 </body>
 </html>
+

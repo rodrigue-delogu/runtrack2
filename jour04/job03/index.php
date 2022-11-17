@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get" class="formCol">
+<form action="" method="post" class="formCol">
         <label for="nom">Quel est votre nom: <br></label>
         <input type="text" name="nom" id="nom"><br>
 
@@ -19,10 +19,9 @@
 
         <input type="submit" value="Envoyer le formulaire">
     </form>
-        
 <?php
     $compter = 0;
-    foreach($_GET as $key => $value){
+    foreach($_POST as $key => $value){
     $compter++;
     }
     echo "<br>il y a $compter arguments";
