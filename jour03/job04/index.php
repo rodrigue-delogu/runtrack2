@@ -1,8 +1,9 @@
 <?php
-    $str = "Dans l'espace, personne ne vous entend crier";
-    $nbrcarac = "<br> Le nombre de caractère est de ".strlen($str);
+    $str=  "Dans l'espace, personne ne vous entend crier";
+    $count=0;
 
-    echo $str;
-    echo $nbrcarac;
-
+    for($i = 0; isset($str[$i]); $i++){
+        $count++;
+    }
+    echo $count;
 ?>
