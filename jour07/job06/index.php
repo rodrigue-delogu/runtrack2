@@ -4,28 +4,30 @@ $str = "ABEGLST";
 
 function leetSpeak($str){
     for ($i=0; isset($str[$i]); $i++){
-        if("A" === $str[$i]){
-            echo 4;        
+        if("A" === $str[$i] || "a" === $str[$i]){
+            $str[$i] = 4;        
         }
-        elseif("B" === $str[$i]){
-            echo 8;        
+        elseif("B" === $str[$i] || "b" === $str[$i]){
+            $str[$i] = 8;        
         }
-        elseif("E" === $str[$i]){
-            echo 3;        
+        elseif("E" === $str[$i] || "e" === $str[$i]){
+            $str[$i] = 3;        
         }
-        elseif("G" === $str[$i]){
-            echo 6;        
+        elseif("G" === $str[$i] || "g" === $str[$i]){
+            $str[$i] = 6;        
         }
-        elseif("L" === $str[$i]){
-            echo 1;        
+        elseif("L" === $str[$i] || "l" === $str[$i]){
+            $str[$i] = 1;        
         }
-        elseif("S" === $str[$i]){
-            echo 5;        
+        elseif("S" === $str[$i] ||"s" === $str[$i]){
+            $str[$i] = 5;        
         }
-        elseif("T" === $str[$i]){
-            echo 7;        
+        elseif("T" === $str[$i] || "t" === $str[$i]){
+            $str[$i] = 7;        
         }
     }
+return $str;
 }
+
 echo leetSpeak($str);
 ?>
