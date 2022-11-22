@@ -1,6 +1,6 @@
  <?php
 
-// Correction de Nicolas ne pas prendre en compte ce job 07
+// Correction de Nicolas ne pas prendre en compte ce job 
 $str = "Certaines choses changent, d'autres ne changeront jamais";
 
 $newStr = "";
