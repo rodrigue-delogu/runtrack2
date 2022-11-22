@@ -12,3 +12,4 @@ function bonjour($jour){
 
 bonjour($arg);
 bonjour($arg1);
+?>
