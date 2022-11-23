@@ -1,8 +1,9 @@
 <?php
-
 session_start();
 
-// session_destroy();
+if(isset($_POST['button1'])) {
+    $_SESSION['nbvisite'] = 0;
+}
 
 if(isset($_SESSION['nbvisite'])){
     $_SESSION['nbvisite'] += 1;
@@ -11,6 +12,11 @@ if(isset($_SESSION['nbvisite'])){
 else{
     $_SESSION['nbvisite'] = 1;
     echo "Count connexion : ".$_SESSION['nbvisite']. " times";
-} 
+}
 
 ?>
+    <form method="post">
+        <input type="submit" name="button1" value="reset" />
+    </form>
+
+ 
