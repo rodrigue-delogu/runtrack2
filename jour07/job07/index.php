@@ -8,11 +8,19 @@
         <option id="cesar" name="cesar" value="cesar">cesar</option>
         <option id="plateforme" name="plateforme" value="plateforme">plateforme</option>
     </select>
-
+    <!-- <label>César :</label> -->
      <input type="submit" value="bouton submit" title="valider pour aller à la page sélectionnée" />
-     <label>Enter your text :</label>
 </p>
 
+
 <?php
+
+function gras($str){
+    for ($i=0; $str[$i] ; $i++) { 
+        
+    }
+}
+
+
 
 ?>
