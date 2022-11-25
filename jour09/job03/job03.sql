@@ -1,1 +1,2 @@
-SELECT * FROM `étudiants`;
+SELECT * 
+FROM étudiants;

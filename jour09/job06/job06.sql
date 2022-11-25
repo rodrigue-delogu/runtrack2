@@ -1,1 +1,3 @@
-SELECT * FROM `étudiants` WHERE prenom = 'T';
+SELECT * 
+FROM étudiants 
+WHERE prenom = 'T';
